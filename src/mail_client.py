@@ -13,13 +13,13 @@ class MailClient:
 
     def login(self):
         # smtpobj is a SMTP object that represents a connection to an SMTP mail server and has methods for sending emails.
-        self.email = input("What is your email address ? ")  # take username or input
-        my_passw = getpass.getpass('Enter your password:')
+        self.email = sarahdae55@gmail.com
+        my_passw = Porthills15
         try:
             self.smtpobj.login(self.email, my_passw)
             self.email = self.email
         except smtplib.SMTPAuthenticationError:
-            print("The username or password you entered is incorrect.")
+            print('The username or password you entered is incorrect.')
 
     def enable_email_encryption(self, smtp_server):
         if smtp_server == "smtp.gmail.com":
